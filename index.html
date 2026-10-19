@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f7fb">
+    <meta name="description" content="Cours, exercices pratiques, projets Word 2019 et examens blancs pour préparer la certification MOS Word.">
+    <title>Cap Word — Préparation MOS Word 2019</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Aller au contenu</a>
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar" aria-label="Navigation principale">
+        <a class="brand" href="#accueil" aria-label="Cap Word, accueil">
+          <span class="brand-mark" aria-hidden="true">W</span>
+          <span class="brand-copy"><strong>cap<span>word</span></strong><small>ATELIER MOS 2019</small></span>
+        </a>
+        <div class="sidebar-label">APPRENTISSAGE</div>
+        <nav class="side-nav">
+          <button class="nav-link active" data-view="accueil"><span class="nav-icon">⌂</span>Vue d’ensemble</button>
+          <button class="nav-link" data-view="cours"><span class="nav-icon">▤</span>Parcours de cours</button>
+          <button class="nav-link" data-view="projets"><span class="nav-icon">▧</span>Projets Word <span class="nav-count">15</span></button>
+          <button class="nav-link" data-view="examens"><span class="nav-icon">◷</span>Examens blancs</button>
+          <button class="nav-link" data-view="quiz"><span class="nav-icon">✓</span>Quiz de révision</button>
+        </nav>
+        <div class="sidebar-label sidebar-label-spaced">BOÎTE À OUTILS</div>
+        <nav class="side-nav">
+          <button class="nav-link" data-view="ressources"><span class="nav-icon">⇩</span>Cours & ressources</button>
+          <button class="nav-link" data-view="progression"><span class="nav-icon">◔</span>Ma progression</button>
+        </nav>
+        <div class="sidebar-spacer"></div>
+        <section class="sidebar-progress" aria-label="Votre progression">
+          <div class="progress-icon" aria-hidden="true">✦</div>
+          <div class="sidebar-progress-copy">
+            <strong>Votre parcours</strong>
+            <span id="sidebar-progress-text">0 % terminé</span>
+          </div>
+          <div class="mini-progress"><span id="sidebar-progress-bar"></span></div>
+        </section>
+        <div class="sidebar-note"><span aria-hidden="true">●</span> Progression sauvegardée sur cet appareil</div>
+      </aside>
+
+      <div class="workspace">
+        <header class="topbar">
+          <button class="mobile-menu" id="mobile-menu" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+          <div class="breadcrumb"><span>Formation</span><span class="crumb-sep">/</span><strong id="page-label">Vue d’ensemble</strong></div>
+          <div class="topbar-actions">
+            <span class="save-indicator"><span class="save-dot"></span>Enregistré</span>
+            <button class="avatar" type="button" aria-label="Espace apprenant">A</button>
+          </div>
+        </header>
+        <main id="main-content" tabindex="-1"></main>
+        <footer class="site-footer">
+          <span>Cap Word · Un atelier pédagogique indépendant</span>
+          <span>La certification et la réussite ne sont pas garanties par cette plateforme.</span>
+        </footer>
+      </div>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
