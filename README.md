@@ -13,8 +13,8 @@ Plateforme pédagogique statique, en français, conçue à partir des documents 
 
 ## Publication sur GitHub Pages
 
-1. Créez un dépôt GitHub public vide et poussez **le contenu de ce dossier** dans sa branche `main`.
-2. Dans le dépôt, ouvrez **Settings → Pages** et choisissez **GitHub Actions** comme source de publication.
+1. Créez un dépôt GitHub public et poussez **le contenu de ce dossier** dans sa branche `main`.
+2. Avant le premier déploiement, ouvrez **Settings → Pages → Build and deployment** et choisissez **GitHub Actions** comme source. Cette activation initiale doit être faite dans les paramètres du dépôt : le jeton standard du workflow ne peut pas activer Pages lui-même.
 3. Le workflow `.github/workflows/pages.yml` déploie automatiquement le site après un push sur `main`. L'URL apparaît dans l'exécution de l'action ou dans **Settings → Pages**.
 
 Le site utilise des chemins relatifs et ne demande ni compilation ni secrets.
